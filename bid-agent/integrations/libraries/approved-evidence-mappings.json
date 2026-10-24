@@ -1,0 +1,264 @@
+{
+  "version": "deta-approved-evidence-mappings-v1",
+  "authorization": "User confirmed on 2026-10-24 that all three-library data is approved for AI execution without approval pauses. Existing protected skill mappings remain authoritative.",
+  "model_groups": [
+    {
+      "id": "WLR5-PLATFORM-001",
+      "values": [
+        "WLR-5",
+        "WLR-5C(E)"
+      ],
+      "source": "bid-model-response-matrix/references/sop-workflow.md and matching-rules.md",
+      "scope": "WLR-5 platform only; excludes WLR-5B, WC and GZC families"
+    }
+  ],
+  "parameter_groups": [
+    {
+      "id": "SKILL-PARAM-001",
+      "values": [
+        "参考型号",
+        "防爆锂离子蓄电池无轨胶轮车（5人座指挥车）型号",
+        "型号"
+      ],
+      "source": "/home/ubuntu/.agents/skills/bid-model-response-matrix/assets/alias-example.json",
+      "scope": "exact approved equivalence only; compound aliases ending * excluded"
+    },
+    {
+      "id": "SKILL-PARAM-002",
+      "values": [
+        "乘坐人数（人）",
+        "额定载人数量（人）",
+        "额定载人数量",
+        "载人数量"
+      ],
+      "source": "/home/ubuntu/.agents/skills/bid-model-response-matrix/assets/alias-example.json",
+      "scope": "exact approved equivalence only; compound aliases ending * excluded"
+    },
+    {
+      "id": "SKILL-PARAM-003",
+      "values": [
+        "驱动方式",
+        "驱动形式"
+      ],
+      "source": "/home/ubuntu/.agents/skills/bid-model-response-matrix/assets/alias-example.json",
+      "scope": "exact approved equivalence only; compound aliases ending * excluded"
+    },
+    {
+      "id": "SKILL-PARAM-004",
+      "values": [
+        "最高行驶速度（km/h）",
+        "行驶最高速度",
+        "地面行驶最高车速",
+        "最高车速"
+      ],
+      "source": "/home/ubuntu/.agents/skills/bid-model-response-matrix/assets/alias-example.json",
+      "scope": "exact approved equivalence only; compound aliases ending * excluded"
+    },
+    {
+      "id": "SKILL-PARAM-005",
+      "values": [
+        "爬坡能力（゜）",
+        "额定载重爬坡能力",
+        "额定爬坡能力（度）",
+        "最大爬坡度"
+      ],
+      "source": "/home/ubuntu/.agents/skills/bid-model-response-matrix/assets/alias-example.json",
+      "scope": "exact approved equivalence only; compound aliases ending * excluded"
+    },
+    {
+      "id": "SKILL-PARAM-006",
+      "values": [
+        "最小离地间隙（mm）",
+        "最小离地间隙"
+      ],
+      "source": "/home/ubuntu/.agents/skills/bid-model-response-matrix/assets/alias-example.json",
+      "scope": "exact approved equivalence only; compound aliases ending * excluded"
+    },
+    {
+      "id": "SKILL-PARAM-007",
+      "values": [
+        "最小转弯半径（mm）",
+        "最小转弯半径",
+        "最大通道圆外半径",
+        "转弯半径"
+      ],
+      "source": "/home/ubuntu/.agents/skills/bid-model-response-matrix/assets/alias-example.json",
+      "scope": "exact approved equivalence only; compound aliases ending * excluded"
+    },
+    {
+      "id": "SKILL-PARAM-008",
+      "values": [
+        "电机额定功率（kW）",
+        "驱动电机额定总功率（KW）",
+        "电机额定总功率",
+        "驱动电机额定功率"
+      ],
+      "source": "/home/ubuntu/.agents/skills/bid-model-response-matrix/assets/alias-example.json",
+      "scope": "exact approved equivalence only; compound aliases ending * excluded"
+    },
+    {
+      "id": "SKILL-PARAM-009",
+      "values": [
+        "外形参考尺寸（mm）",
+        "整车外形尺寸（mm）",
+        "整车尺寸（mm）",
+        "整车外形尺寸"
+      ],
+      "source": "/home/ubuntu/.agents/skills/bid-model-response-matrix/assets/alias-example.json",
+      "scope": "exact approved equivalence only; compound aliases ending * excluded"
+    },
+    {
+      "id": "SKILL-PARAM-010",
+      "values": [
+        "充电时间（h）",
+        "充电时间"
+      ],
+      "source": "/home/ubuntu/.agents/skills/bid-model-response-matrix/assets/alias-example.json",
+      "scope": "exact approved equivalence only; compound aliases ending * excluded"
+    },
+    {
+      "id": "SKILL-PARAM-011",
+      "values": [
+        "电源系统总能量（kWh）",
+        "电池箱总容量"
+      ],
+      "source": "/home/ubuntu/.agents/skills/bid-model-response-matrix/assets/alias-example.json",
+      "scope": "exact approved equivalence only; compound aliases ending * excluded"
+    },
+    {
+      "id": "SKILL-PARAM-012",
+      "values": [
+        "蓄电池形式",
+        "电池类型"
+      ],
+      "source": "/home/ubuntu/.agents/skills/bid-model-response-matrix/assets/alias-example.json",
+      "scope": "exact approved equivalence only; compound aliases ending * excluded"
+    },
+    {
+      "id": "SKILL-PARAM-013",
+      "values": [
+        "轮胎",
+        "轮胎结构形式",
+        "轮胎规格"
+      ],
+      "source": "/home/ubuntu/.agents/skills/bid-model-response-matrix/assets/alias-example.json",
+      "scope": "exact approved equivalence only; compound aliases ending * excluded"
+    },
+    {
+      "id": "SKILL-PARAM-014",
+      "values": [
+        "载重（kg）",
+        "额定载重量（kg）",
+        "额定载重量",
+        "载重",
+        "额定载质量",
+        "额定载质量（kg）"
+      ],
+      "source": "/home/ubuntu/.agents/skills/bid-model-response-matrix/assets/alias-example.json",
+      "scope": "exact approved equivalence only; compound aliases ending * excluded"
+    },
+    {
+      "id": "SKILL-PARAM-015",
+      "values": [
+        "续航里程（km）",
+        "续航里程"
+      ],
+      "source": "/home/ubuntu/.agents/skills/bid-model-response-matrix/assets/alias-example.json",
+      "scope": "exact approved equivalence only; compound aliases ending * excluded"
+    },
+    {
+      "id": "SKILL-PARAM-018",
+      "values": [
+        "电池型式",
+        "电池类型"
+      ],
+      "source": "/home/ubuntu/.agents/skills/bid-model-response-matrix/assets/alias-example.json",
+      "scope": "exact approved equivalence only; compound aliases ending * excluded"
+    },
+    {
+      "id": "SKILL-PARAM-022",
+      "values": [
+        "电机型式",
+        "电机类型"
+      ],
+      "source": "/home/ubuntu/.agents/skills/bid-model-response-matrix/assets/alias-example.json",
+      "scope": "exact approved equivalence only; compound aliases ending * excluded"
+    },
+    {
+      "id": "SKILL-PARAM-023",
+      "values": [
+        "电机控制器功率(kW)",
+        "电机控制器功率",
+        "电机控制器额定功率"
+      ],
+      "source": "/home/ubuntu/.agents/skills/bid-model-response-matrix/assets/alias-example.json",
+      "scope": "exact approved equivalence only; compound aliases ending * excluded"
+    },
+    {
+      "id": "SKILL-PARAM-024",
+      "values": [
+        "转向器型式",
+        "转向助力",
+        "转向器"
+      ],
+      "source": "/home/ubuntu/.agents/skills/bid-model-response-matrix/assets/alias-example.json",
+      "scope": "exact approved equivalence only; compound aliases ending * excluded"
+    },
+    {
+      "id": "SKILL-PARAM-025",
+      "values": [
+        "型式",
+        "行车制动",
+        "制动器结构"
+      ],
+      "source": "/home/ubuntu/.agents/skills/bid-model-response-matrix/assets/alias-example.json",
+      "scope": "exact approved equivalence only; compound aliases ending * excluded"
+    },
+    {
+      "id": "SKILL-PARAM-027",
+      "values": [
+        "制动器型式（前/后）",
+        "制动器结构"
+      ],
+      "source": "/home/ubuntu/.agents/skills/bid-model-response-matrix/assets/alias-example.json",
+      "scope": "exact approved equivalence only; compound aliases ending * excluded"
+    },
+    {
+      "id": "SKILL-PARAM-029",
+      "values": [
+        "驻车制动型式",
+        "驻车、紧急停车制动"
+      ],
+      "source": "/home/ubuntu/.agents/skills/bid-model-response-matrix/assets/alias-example.json",
+      "scope": "exact approved equivalence only; compound aliases ending * excluded"
+    },
+    {
+      "id": "SKILL-PARAM-030",
+      "values": [
+        "应急制动型式",
+        "驻车、紧急停车制动"
+      ],
+      "source": "/home/ubuntu/.agents/skills/bid-model-response-matrix/assets/alias-example.json",
+      "scope": "exact approved equivalence only; compound aliases ending * excluded"
+    },
+    {
+      "id": "SKILL-PARAM-032",
+      "values": [
+        "灭火装置型式",
+        "配备自动灭火系统",
+        "灭火装置"
+      ],
+      "source": "/home/ubuntu/.agents/skills/bid-model-response-matrix/assets/alias-example.json",
+      "scope": "exact approved equivalence only; compound aliases ending * excluded"
+    },
+    {
+      "id": "SKILL-PARAM-033",
+      "values": [
+        "灭火装置数量及位置",
+        "灭火装置数量"
+      ],
+      "source": "/home/ubuntu/.agents/skills/bid-model-response-matrix/assets/alias-example.json",
+      "scope": "exact approved equivalence only; compound aliases ending * excluded"
+    }
+  ]
+}

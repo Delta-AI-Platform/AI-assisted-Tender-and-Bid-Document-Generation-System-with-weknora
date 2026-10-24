@@ -1,0 +1,4 @@
+interface:
+  display_name: "标书制作专家"
+  short_description: "统筹招标解读、资格与评分策划、分册编制和三级自查，沿用现有文档制作能力。"
+  default_prompt: "使用 $bid-document-pro 统筹当前项目的招标解读、资格与评分策略及制作审查，按本项目要求和受保护手册调用现有标书制作流程。"

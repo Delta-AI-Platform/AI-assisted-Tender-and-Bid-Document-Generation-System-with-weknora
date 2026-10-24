@@ -1,0 +1,80 @@
+{
+  "schema_version": "deta-bid-workflow-v1",
+  "version": "2026-10-24.10",
+  "precedence": [
+    "current_tender_and_effective_amendments",
+    "project_business_decisions",
+    "protected_manual",
+    "installed_skills_and_templates",
+    "approved_enterprise_and_history_libraries"
+  ],
+  "quality_states": [
+    "in_progress",
+    "agent_scope_complete",
+    "structure_passed",
+    "content_passed",
+    "business_reviewed",
+    "submission_ready"
+  ],
+  "agent_max_state": "agent_scope_complete",
+  "website_outputs": [
+    "final_bid_docx",
+    "eight_column_docx",
+    "eight_column_xlsx"
+  ],
+  "internal_render_pdf": true,
+  "final_bid_status": "agent_scope_complete_business_review_pending_not_submittable",
+  "formal_technical_response": "preserve_tender_form_and_keep_response_and_deviation_cells_blank",
+  "eight_column_manual_columns": [
+    7,
+    8
+  ],
+  "eight_column_columns": [
+    "车型",
+    "子系统模块",
+    "部件模块",
+    "功能模块",
+    "标准车型答案（历史投标响应）",
+    "本次招标要求",
+    "投标人响应",
+    "偏离说明"
+  ],
+  "approved_libraries": [
+    "enterprise_facts",
+    "inspection_reports",
+    "history"
+  ],
+  "missing_evidence_action": "record_and_continue",
+  "tender_analysis": {
+    "review_every_physical_page": true,
+    "single_source_hash_filled_by_server": true,
+    "compact_no_actionable_page_ranges": true,
+    "technical_index_pages": "exactly_equal_main_tender_pages_classified_as_technical"
+  },
+  "atomization": {
+    "columns": [
+      "原文顺序",
+      "层级编号",
+      "条款类型",
+      "适用对象",
+      "招标要求原文",
+      "来源页码及位置"
+    ],
+    "verbatim": true,
+    "source_order": true,
+    "downstream_after_machine_gate": true,
+    "unresolved_object_action": "record_object_unresolved_and_continue"
+  },
+  "stages": [
+    "项目建档与原件锁定",
+    "招标解析与条款原子化",
+    "动态骨架验收与冻结",
+    "基础字段与资格资料",
+    "商务评分及承诺",
+    "技术证据",
+    "八列内部核对表",
+    "内容质检",
+    "组装与内部渲染",
+    "逐页终审"
+  ]
+}

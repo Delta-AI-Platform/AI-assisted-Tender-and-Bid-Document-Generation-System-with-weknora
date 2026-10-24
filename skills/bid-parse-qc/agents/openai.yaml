@@ -1,0 +1,4 @@
+interface:
+  display_name: "标书解析与四重质检"
+  short_description: "提取资格、评分、亮点与禁忌清单，逐项核查覆盖、冲突及格式风险。"
+  default_prompt: "使用 $bid-parse-qc 解析当前招标文件并审查响应文件，输出带原文与成品位置的四类清单、四重质检和分级修改清单。"

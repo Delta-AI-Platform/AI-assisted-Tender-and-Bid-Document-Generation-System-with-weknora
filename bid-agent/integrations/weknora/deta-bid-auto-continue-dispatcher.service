@@ -1,0 +1,22 @@
+[Unit]
+Description=Deta bid generic project auto continuation dispatcher
+After=network.target deta-agent-tools.service deta-agent-workbench.service
+Requires=deta-agent-tools.service deta-agent-workbench.service
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/codex-workspace/bid-agent
+Environment=HOME=/home/ubuntu
+ExecStart=/home/ubuntu/codex-workspace/weknora-mcp-env/bin/python /home/ubuntu/codex-workspace/bid-agent/integrations/weknora/auto_continue_dispatcher.py
+Restart=always
+RestartSec=5
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=/home/ubuntu/codex-workspace/bid-agent/runs /home/ubuntu/codex-workspace/weknora-build-tools/data
+
+[Install]
+WantedBy=multi-user.target

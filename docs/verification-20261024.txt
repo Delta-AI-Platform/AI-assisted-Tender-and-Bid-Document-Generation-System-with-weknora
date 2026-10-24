@@ -1,0 +1,9 @@
+2026-10-24 Asia/Shanghai
+Source code read: project gateway, current policy, stage validators, project/workflow ledgers, finalization, dispatcher.
+Python: 148 tests, 19.484 seconds, OK.
+Website: HTTP 200; backend /health status ok.
+Embedding: ready, BAAI/bge-small-zh-v1.5, dimensions 512.
+Rerank: ready, BAAI/bge-reranker-v2-m3-int8.
+Limitation: Go/frontend full build and paid full business generation were not rerun.
+Observed service-manager discrepancy: native website/tool processes listening while corresponding systemd units inactive.
+This is a code snapshot, not a data backup or business submission approval.

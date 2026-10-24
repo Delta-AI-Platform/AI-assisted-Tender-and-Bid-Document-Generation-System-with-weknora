@@ -1,0 +1,19 @@
+[Unit]
+Description=Deta local Chinese document reranker
+After=network.target
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/codex-workspace/bid-agent
+Environment=HOME=/home/ubuntu
+Environment=HF_HUB_OFFLINE=1
+Environment=OMP_NUM_THREADS=2
+Environment=TOKENIZERS_PARALLELISM=false
+ExecStart=/home/ubuntu/codex-workspace/deta-embedding-env/bin/python integrations/rerank/server.py
+Restart=on-failure
+RestartSec=15
+MemoryMax=1536M
+CPUQuota=150%
+UMask=0077
+[Install]
+WantedBy=multi-user.target

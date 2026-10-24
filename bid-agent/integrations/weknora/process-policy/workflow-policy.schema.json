@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Deta bid workflow policy",
+  "type": "object",
+  "required": [
+    "schema_version", "version", "quality_states", "agent_max_state",
+    "website_outputs", "internal_render_pdf", "eight_column_manual_columns",
+    "atomization", "stages"
+  ],
+  "additionalProperties": true
+}

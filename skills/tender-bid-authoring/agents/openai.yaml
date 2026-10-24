@@ -1,0 +1,6 @@
+interface:
+  display_name: "标书制作 v1.38"
+  short_description: "招标技术原文转内部横向对标Excel，正式详细技术表留空；其他正文和附件仍完整制作。"
+  default_prompt: "使用 $tender-bid-authoring v1.38 和受保护操作手册完整制作或修订投标文件：先冻结结构和招标技术原文，按原顺序生成内部横向对标XLSX；正式DOCX详细技术响应填写区留空，技术评分正文、证明附件、目录页码和逐页终审照常完成。用户旧横向表只参考版式，不复用数据。"
+policy:
+  allow_implicit_invocation: true
